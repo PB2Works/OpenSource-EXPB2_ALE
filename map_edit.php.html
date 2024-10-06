@@ -1,0 +1,246 @@
+<!-- saved from url=(0054)https://www.plazmaburst2.com/level_editor/map_edit.php -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+		<meta http-equiv="no-cache">
+		<meta http-equiv="Expires" content="-1">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<link href="/static/map_edit/e_css.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/x-icon" href="/static/icons16/favicon.ico">
+		<script src="scripts/jquery-3.7.0.min.js" lang="javascript"></script>
+		<script src="scripts/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+		<title>Plazma Burst 2 Modded ALE</title>
+	</head>
+
+	<body id="body" onblur="m_failed(event)">
+		<table width="100%" cellpadding="0" cellspacing="0" style="border: 0;">
+			<tbody>
+				<tr>
+					<td valign="middle" style="text-align: center;">
+						<div id="floattag" style="position:absolute;left:0px;top:0px">
+							<div id="top_panel" class="topui">
+								<div class="q"></div>
+								<div class="field_dis_left" style="width:47px">Map ID</div><input class="field_dis_right" type="text" id="mapid_field" value="newmap" onfocus="editing_mapname=true" onblur="SetMapName()" pattern="([a-z]|[0-9]|-|_)+" minlength="3" style="width:200px"><div class="q"></div>
+								<input class="field_btn" type="button" value="Download" onclick="SaveThisMap()"><div class="q"></div>
+								<!--<input class="field_btn" type="button" value="Save Map as" onclick="SaveThisMapAs()"><div class="q"></div>-->
+								<input class="field_btn" type="button" value="Upload" onclick="UploadMap()">
+								<div class="q"></div>
+								<!-- <input class="field_btn" type="button" value="Revert Map" onclick="RevertThisMap()"><div class="q"></div> -->
+								<input class="field_btn" type="button" value="New" onclick="StartNewMap()"><div class="q"></div>
+								<input class="field_btn" type="button" value="Maps" onclick="ShowMaps()">
+								<input type="file" id="mapfile" style="display:none">
+								<input class="field_btn" type="button" value="Open" onclick="document.getElementById('mapfile').click()">
+								<div class="q3"></div>
+								<input class="field_btn" type="button" value="Test" onclick="TestMap()">
+								<div class="q"></div>
+								<!--
+								<input class="field_btn" type="button" value="Map Settings">
+								<div class="q"></div>
+								<input class="field_btn" type="button" value="Check Map" onClick="CheckMap()">
+								<div class="q"></div>
+								<input class="field_btn" type="button" value="Options" onClick="OpenPreferences()">
+								-->
+								<input class="field_btn" type="button" value="Manual" onclick='window.open("/static/manual/manual.html");'>
+								<div class="q"></div>
+								<input class="field_btn" type="button" value="Find Errors" onclick="CheckForErrors()">
+								<div class="q"></div>
+								<div class="q"></div>
+								<input class="field_btn" type="button" value="Settings" onclick="OpenSettings()">
+								<div class="q"></div>
+								<div style="display:none;" id="rightsblock">
+									<div class="field_dis_left" style="width:47px">Rights</div><div id="maprights" class="field_dis_right">Full access [ Map Owner ]</div>
+								</div>
+							</div>
+							<span id="left_panel" class="leftui">
+								<div class="rightui_cntnt">
+									<div id="tools_box"></div>
+								</div>
+							</span>
+							<canvas id="O0" width="1707" height="899" style="cursor:default;vertical-align:top;" tabindex="2"></canvas>
+							<span id="right_panel" class="rightui">
+								<div class="rightui_cntnt">
+									<a class="tool_btn wide_btn" onmousedown="ShowHideObjectBox()" id="objboxhider">Objects list <span style="opacity:0.3">is displayed</span></a>
+									<div id="gui_objbox" class="objbox"></div>
+									<div class="q"></div>
+									<div id="gui_params"></div>
+								</div>
+							</span>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<input type="text" value=":D" style="position:absolute;left:0px;top:0px;display:none" class="pa2edit" id="editablef" onkeydown="stopedit(event)" onkeyup="stopedit(event)" onblur="unfocusedit()" onfocus="letonfocus()" onmouseout="letout()"></textarea>
+
+		<span tabindex="1" style="position:fixed;width:200px;height:400px;left:0px;top:0px;display:none;overflow:auto" class="parambox" id="parambox" onblur="cancelable_unfocusedit();" onfocus="cancel_unfocusedit();" onmousedown="cancel_unfocusedit();"></span>
+
+		<div id="mrdimlights" onclick="CancelDim()"></div>
+		<div id="mrsave" class="mrpopup">
+			<div class="mrtitle">Save Map as...</div>
+			<div class="mrbox">
+				<div class="q"></div>Enter ID:<div class="q"></div><input type="text" class="field_input" id="mrsave_mrfield" style="width:415px" value=""><div class="q"></div><input class="btn" type="button" value="Save" onclick="mrSave()"><br><div class="q"></div><br><div id="map_list" class="objbox" style="height:220px;margin-bottom:10px;">
+				...
+				</div>
+				<input class="btn" type="button" value="Refresh maps list" onclick="mrReloadSave()" style="width:200px;">
+				<div class="q"></div>You can change map list order at "Options"
+			</div>
+		</div>
+		<div id="mrload" class="mrpopup">
+			<div class="mrtitle">Get Map...</div>
+			<div class="mrbox">
+				<div class="q"></div>
+				Enter ID:
+				<div class="q"></div>
+				<input type="text" class="field_input" id="mrload_mrfield" style="width:415px" value="">
+				<div class="q"></div>
+				<input class="btn" type="button" value="Open" onclick="LoadMapFromServer(mrload_mrfield.value);CancelDim()"><br>
+				<div class="q"></div><br>
+				<div id="map_list_load" class="objbox" style="height:220px;margin-bottom:10px;">
+					...
+				</div>
+				<input class="btn" type="button" value="Refresh maps list" onclick="mrReloadLoad()" style="width:200px;">
+				<div class="q"></div>
+				You can change map list order at "Options"
+			</div>
+		</div>
+		<div id="mrcustom_image" class="mrpopup" style="width: 80%;height: 85%; left: -160px;">
+			<div class="mrtitle">Image Selection</div>
+			<div class="mrbox" style="height: calc( 100% );">
+				<div style="height:86px">You can upload your custom images by pressing Ctrl+V . You can copy images in majority of image editing software by pressing Ctrl+C or Ctrl+Shift+C.<br>Players will see red rectangles instead of your custom images unless you request approval (in right click menu on specific upload) and approval verification team will agree on your upload being suitable &amp; publicly available for both players and other level designers.<br>
+				<div style="text-align:right">
+				<input type="file" id="imageLoader" name="imageLoader">
+				<canvas id="imageCanvas" style="display:none;"></canvas>
+				</div>
+				</div>
+				<div id="image_list" class="objbox">
+				Loading...
+				</div>
+			</div>
+		</div>
+		<div id="mrsettings" class="mrpopup">
+			<div class="mrtitle">Settings</div>
+			<div>
+				<!-- Settings Window -->
+				<div class="mrbox">
+					<div style="width: 50%; float: left">
+						<div class="field_input_header">Login</div>
+						<input class="field_input" type="text" id="mrsettings_login" value="login" style="width:200px">
+						<div class="qq"></div>
+						<div class="field_input_header">Password</div>
+						<input class="field_input" type="password" id="mrsettings_password" value="password" style="width:200px">
+						<div class="qq"></div>
+						<div class="field_input_header" title="The server to uploads maps to">Map server</div>
+						<input class="field_input" type="text" id="mrsettings_mapserver" value="localhost" style="width:200px">
+						<div class="qq"></div>
+						<div class="qq"></div>
+						<div class="field_input_header" title="Method used to draw the map">Renderer</div>
+						<input type="button" class="field_switch field_switch_left" id="mrsettings_r2d" title="The default mode (works fine, but can be slow)" onclick="SetRenderMode('2d')" value="2D"></input>
+						<input type="button" class="field_switch field_switch_right" id="mrsettings_rgl" title="A faster way to draw graphics (experimental)" value="GL" onclick="SetRenderMode('gl')"></input>
+						<div class="qq"></div>
+						<div class="field_input_header" title="Editor mode">Mode</div>
+						<input type="button" class="field_switch field_switch_left" id="mrsettings_mode_reg" title="Vanilla mode. Backwards-compatible with original PB2 maps" value="Regular" onclick="SetEditorMode('regular')"></input>
+						<input type="button" class="field_switch field_switch_right" id="mrsettings_mode_ex" title="New features & bug fixes. Not backwards-compatible" value="Expanded" onclick="SetEditorMode('expanded')"></input>
+						<div class="qq"></div>
+						<div class="field_input_header" title="Editor mode">Display var</div>
+						<input type="button" class="field_switch field_switch_left" id="mrsettings_var_simplified" title="Display variable trigger actions in pseudocode." value="Simplified" onclick="SetVarMode('simplified')"></input>
+						<input type="button" class="field_switch field_switch_right" id="mrsettings_var_full" title="Display variable trigger actions in full English sentences." value="Full" onclick="SetVarMode('full')"></input>
+					</div>
+					<div style="width: 50%; display: inline-block">
+						<div class="field_input_header">Server</div>
+						<input class="field_input" type="text" id="mrsettings_matchserver" value="prosuwanted.ru:36320" style="width:200px">
+						<div class="qq"></div>
+						<div class="field_input_header">Match name</div>
+						<input class="field_input" type="text" id="mrsettings_testmatch_name" value="login" style="width:200px">
+						<div class="qq"></div>
+						<div class="field_input_header">Match ID</div>
+						<input class="field_input" type="text" id="mrsettings_testmatch_id" value="mytest" style="width:200px">
+						<div class="qq"></div>
+						<div class="field_input_header">Match pw.</div>
+						<input class="field_input" type="password" id="mrsettings_testmatch_pw" value="password" style="width:200px">
+						<div class="qq"></div>
+						<div class="field_input_header">Match mode</div>
+						<input type="button" class="field_switch" id="mrsettings_testmatch_dm" value="DM" onclick="SetMatchTestMode(this)"></input>
+						<input type="button" class="field_switch" id="mrsettings_testmatch_coop" value="COOP" onclick="SetMatchTestMode(this)"></input>
+						<input type="button" class="field_switch" id="mrsettings_testmatch_tdm" value="TDM" onclick="SetMatchTestMode(this)"></input>
+						<div class="qq"></div>
+						<div class="field_input_header" title="Maximum number of players">Match pl.</div>
+						<input type="range" id="mrsettings_testmatch_players" class="field_range" min="1" max="16" value="8" id="mrsettings_testmatch_maxplayers" oninput="MaxPlayersRange(this)"></input>
+						<span id="mrsettings_testmatch_players_t" style="font-size: 20px; color: #a6bedf;">69</span>
+						<div class="qq"></div>
+					</div>
+					<div class="qq"></div>
+					<div style="display: flex; justify-content: center;">
+						<input class="field_btn" type="button" value="Cancel" onclick="CancelDim()"></input>
+						<div class="q"></div>
+						<input class="field_btn" type="button" value="Apply" onclick="ApplySettings()"></input>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mreditor" class="mrpopup editorpopup">
+			<div id="mreditor_title" class="mrtitle">Code editor</div>
+			<div class="mrbox">
+				<div id="code_editor">
+					
+				</div>
+			</div>
+		</div>
+
+		<div id="version_rights" style="right:0px;position:fixed;top:0px;">
+			<div class="c">
+				Plazma Burst 2 Modded Level Editor
+				<br>
+				v3.0-dev
+			</div>
+			<div class="q"></div>
+		</div>
+		<div id="game_overlay"></div>
+		<div id="note_place"></div>
+		<div class="mobile_panel" id="mobile_panel" style="display:none">
+				<span class="mobile_btn" onclick="drag_toggle=!drag_toggle; this.className=drag_toggle?'mobile_btn2':'mobile_btn';">Drag screen 📷</span>
+				<span class="mobile_btn" onclick="ctrl=!ctrl; this.className=ctrl?'mobile_btn2':'mobile_btn';">Add +</span>
+				<span class="mobile_btn" onclick="alt=!alt; this.className=alt?'mobile_btn2':'mobile_btn'">Sub -</span>
+				<span class="mobile_btn" onclick="k_shift=!k_shift; this.className=k_shift?'mobile_btn2':'mobile_btn';">Loop 🔁</span>
+				<span class="mobile_btn" onclick="DO_UNDO();">Undo ⏮</span>
+				<span class="mobile_btn" onclick="DO_REDO();">Redo ⏭</span>
+				<span class="mobile_btn" onclick="DeleteSelection();">Del ⌀</span>
+				<span class="mobile_btn" onclick="
+							if (typeof(Storage)!=='undefined')
+							{
+								CopyToClipBoard('clipboard');
+								NewNote('Objects copied to the clipboard.', note_passive);
+							}
+							else
+							{
+								NewNote('Oops! Your browser seem not to have sessionStorage (localStorage) support.', note_bad);
+							}
+				">Copy</span>
+				<span class="mobile_btn" onclick="
+							if (typeof(Storage)!=='undefined')
+							{
+								if (PasteFromClipBoard('clipboard'))
+								NewNote('Objects pasted from the clipboard.', note_passive);
+								else
+								NewNote('Clipboard is empty. Nothing to paste.', note_passive);
+							}
+							else
+							{
+								NewNote('Oops! Your browser seem not to have sessionStorage (localStorage) support.', note_bad);
+							}
+				">Paste 📋</span>
+				<span class="mobile_btn" onclick="zoom_in(null);zoom_validate();need_redraw=true;">Zoom in</span>
+				<span class="mobile_btn" onclick="zoom_out(null);zoom_validate();need_redraw=true;">Zoom out</span>
+		</div>
+
+		<script src="./scripts/noscr.js" type="text/javascript"></script>
+		<script language="JavaScript" src="./scripts/lib_serialize.js" type="text/JavaScript"></script>
+		<!-- <script type="module" src="./scripts/trigger.js"></script> -->
+		<script language="JavaScript" src="./scripts/cached_libs.js" type="text/JavaScript"></script>
+		<div id="stars">&nbsp;</div>
+		<script language="JavaScript" type="text/JavaScript">
+			var curlogin = 'localuser';
+		</script>
+	</body>
+</html>

@@ -1,0 +1,1 @@
+veh_jeep veh_walker veh_capsule veh_crate veh_drone veh_rope veh_corvette

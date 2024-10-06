@@ -1,0 +1,387 @@
+
+<!-- saved from url=(0083)file:///C:/Users/Prosu/Documents/GitHub/PB2_ALE/manual/Level%20Editor%20Manual.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+
+<title>Level Editor Manual</title>
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.unav
+{
+	color: #DDDDDD;
+}
+.tool_btn2
+{
+	vertical-align: top;
+	
+	border-radius: 3px;
+	border: 1px solid #6887b4;
+	
+	background-color: #415b80;
+	
+	color: #adc6e8;
+	display: inline-block;
+	text-align: center;
+	
+	
+	margin-top: 0px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	
+	
+	font-family: Tahoma;
+	font-size: 10px;
+	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+}
+.tool_sm
+{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 30px;
+}
+div.sub
+{
+	margin-left:15px;
+}
+ol,li
+{
+	margin-left:inherit;
+	padding-left:inherit;
+}
+-->
+</style>
+<script type="text/javascript" src="./manual_files/theme_set.js.download"></script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#0066FF" vlink="#666699" alink="#FF99FF" leftmargin="10" topmargin="10" marginwidth="10" marginheight="10">
+
+
+
+
+
+This page was updated on 
+<!-- #BeginDate format:Am1 -->August 28, 2019<!-- #EndDate -->
+<br>
+<br>
+<img src="./manual_files/welcome.jpg" width="800" height="244"><br>
+<h3>Level Editor Manual</h3>
+<h3>1. Introduction</h3>
+<div class="sub">Welcome to the Plazma Burst 2 Level Editor Manual. This manual will describe all the basic tools of the Level Editor, Its' identities and purposes.<br>
+  <br>
+</div>
+<h3>2. Let's begin with small glossary</h3>
+<div class="sub"><strong>Key filtering</strong> - the ability of "interface 
+  element" to act as a different tool in case when Ctrl, Alt and Shift keys 
+  being hold during mouse click. Usually Ctrl key will mean "Add", "Alt" 
+  key will mean "Exclude", "Shift" key will mean "Next 
+  object".<br>
+<br>
+  <strong>Map ID</strong> - unique map identification. Your map ID is what players 
+  use to play your map in-game.<br>
+</div>
+<br>
+<h3>3. Now let's proceed to interface</h3>
+<img src="./manual_files/interface.jpg" width="1224" height="697" border="0">
+<div class="sub"> 
+  <ol>
+    <li><strong>Map ID</strong> - displays the map ID of your map that you are 
+      currently working on.</li>
+    <li><strong>Save Map</strong> - saves your map.</li>
+    <li><strong>Save Map as</strong> - saves map with the ability to specify a 
+      new name.</li>
+    <li><strong>Revert Map</strong> - cancels all the changes made after the last 
+      "Save Map" was made.</li>
+    <li><strong>New Map</strong> - create a new map that you can work on.</li>
+    <li><strong>Open Map</strong> - open one of previously saved maps.</li>
+    <li><strong>Play as tester</strong> - test a map before it's published.</li>
+    <li><strong>Rights</strong> - displays rights which you have on specific map.</li>
+    <li><strong>Level Editor version info</strong> - displays the current Level 
+      Editor version.</li>
+    <li><strong>Tools</strong> - a list of available tools for map editing.</li>
+    <li><strong>Layers</strong> - allows to disable a specific "object(s) 
+      layers" from being accidentally edited.</li>
+    <li><strong>Grid opactity</strong> - toggle to see how much of the grid is 
+      visible.</li>
+    <li><strong>Objects list</strong> - displays all of the objects on specific 
+      layer. This list supports <strong>Key filtering</strong>.</li>
+    <li><strong>Selected objects info</strong> - lists all selected objects at 
+      the moment. "Red X" will cancel a selection.</li>
+    <li><strong>Selected object's parameters</strong> - lists all parameters of 
+      your selected objects. You can edit them.</li>
+    <li><strong>Map blueprint</strong> - here you can work with objects on your 
+      map or create them. Selected objects are marked with the color "yellow". 
+      Supports <strong>Key filtering</strong>, left mouse button, right mouse 
+      button, mouse wheel.</li>
+  </ol>
+</div>
+<br>
+<h3>4. It's time to pick tools and start making objects</h3>
+<div class="sub">
+Here is short description about what tools you can use.<br>
+<br>
+	
+  <div style="line-height:32px"> <span class="tool_btn2 tool_sm"><img src="./manual_files/edit.gif"></span> 
+    <strong>FreeEdit tool</strong> - allows you to select, deselect, move, scale 
+    objects. Supports <strong>Key filtering</strong> features.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/box.gif"></span> 
+    <strong>Add a Wall</strong> - allows you to create wall objects. Drag to specify 
+    the size.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/door.gif"></span> 
+    <strong>Add a Movale object</strong> - allows you to create a Movable object 
+    or objects. Drag to specify the size.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/region.gif"></span> 
+    <strong>Add a Region</strong> - allows you to create Region objects. Drag 
+    to specify the size.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/pushf.gif"></span> 
+    <strong>Add a Pushing area</strong> - allows you to create Pushing area objects. 
+    Drag to specify the size.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/bg.gif"></span> 
+    <strong>Add a Background</strong> - allows you to create Background objects. 
+    Drag to specify the size.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/water.gif"></span> 
+    <strong>Add a Water area</strong> - allows you to create Water area objects. 
+    Drag to specify the size.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/player.gif"></span> 
+    <strong>Add a Player</strong> - allows you to create Player objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/enemy.gif"></span> 
+    <strong>Add an Enemy</strong> - allows you to create Enemy objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/vehicle.gif"></span> 
+    <strong>Add a Vehicle</strong> - allows you to create Vehicle objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/decor.gif"></span> 
+    <strong>Add Decoration</strong> - allows you to create Decoration objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/gun.gif"></span> 
+    <strong>Add a Gun</strong> - allows you to create Gun objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/lamp.gif"></span> 
+    <strong>Add a Lamp</strong> - allows you to create Lamp objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/barrel.gif"></span> 
+    <strong>Add a Barrel</strong> - allows you to create Barrel objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/trigger.gif"></span> 
+    <strong>Add a Trigger</strong> - allows you to create Trigger objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/timer.gif"></span> 
+    <strong>Add a Timer</strong> - allows you to create Timer objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/inf.gif"></span> 
+    <strong>Add an Engine mark</strong> - allows you to create Engine mark objects.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/song.gif"></span> 
+    <strong>Add Song</strong> - allows you to create custom song objects that can be played using triggers. Might be able to download music only from limited list of domains, such as <a href="https://freemusicarchive.org/" target="_blank">https://freemusicarchive.org</a> and <a href="https://www.newgrounds.com/" target="_blank">https://www.newgrounds.com</a> (URL must be the song page URL, not file download link. Use <strong>Engine Mark</strong> with modificator "<strong>Enable level trigger error reporting</strong>"  to catch song availability error messages). Make sure to mention song author in level description or map credits.<br>
+    <span class="tool_btn2 tool_sm"><img src="./manual_files/scale.gif"></span> 
+    <strong>SelectionScale tool</strong> - allows you to scale selected objects.<br>
+	</div><br>
+<em>Notes:</em><br>
+  - With the Plazma Burst 2 engine, "Crate" and "Rope" objects 
+  are "Vehicles". <br>
+  - With the Plazma Burst 2 engine, "Allies" are "Enemies" (or "Actors")
+  unless they are on the same team as active Player.<br>
+  - Player and Enemy objects will not collide if their team is set to "Alpha".<br>
+  - Allies won't try to pick your gun if gun is meant for your and ally's team only.
+  <br>
+  - In the Plazma Burst 2 engine, the Lamp flare effect can be disabled.<br>
+  - Destruction of Lamp objects does not guarantee lightmap recalculation. Game will stop trying to do so if first recalculation takes significant ammount of time for player.
+  <br>
+  - Some of Decorations will automatically generate a glowing effect with the 
+  help of "Lamp object" with the flare effect disabled. Additionally they will remove "Lamp" objects around (just so old maps don't have doubled effect).<br>
+  - None of Decorations collide. Their collision can be made with the help of 
+  invisible Movable object(s).<br>
+  - The "Pushing area" object can also deal 2 kinds of damage: basic and slicing. Second spawns hit particles and slices body in half on death.<br>
+  - The "Killing ray Decorations" deal no damage by default. Their damage 
+  can be created with the help of "Pushing areas" with slicing damage 
+  enabled.<br>
+  - With the Plazma Burst 2 engine, Acid is Water with damage turned on.<br>
+  - "Background objects" are just the background walls. To change the 
+  sky texture use the "Engine mark" object or Trigger logic.<br>
+  - Shadows are generated only over Background objects in Plazma Burst 2.<br>
+  - Plazma Burst 2 engine automatically creates Lamps with the 
+  disabled flare effect around Background objects with the brightness based 
+  on average brightness of current sky texture to generate the global illumination.<br>
+  - Shadow appearance is based on the each player's game settings.<br>
+  - Enemy object skills are based on the "difficulty level" which is 
+  selected by player. In multiplayer, the difficulty level is "Impossible" by default, unless changed with Trigger logic.<br>
+  - Manipulation of the gameplay and the level appearance can be done with help 
+  of Engine mark object(s).<br>
+  - Not all objects' properties are restored on round change in Multiplayer.<br>
+  - Synchronization of most objects
+  isn't done automatically in Multiplayer. Synchronization of movables, for example, will require additional Trigger logic.<br>
+</div>
+<br>
+
+<h3>5. Useful keyboard and mouse shortcuts</h3>
+<div class="sub"> <em>Mouse shortcuts:</em><br>
+<div class="sub">
+<br>
+    <strong>Right mouse click drag / mouse wheen click drag</strong> - Pan.<br>
+    <strong>Wheel up</strong> - zoom in.<br>
+    <strong>Wheel down</strong> - zoom out.<br>
+    <br>
+    <strong>Left mouse click drag over selection</strong> - move selected objects 
+    (can be combinated with WSAD screen control).<br>
+    <strong>Left mouse click drag over edge of selected resizable object</strong> 
+    - resize selected object (can be combinated with WSAD screen control).<br>
+    <strong>Left mouse click drag</strong> - selection region drag (can be combinated 
+    with WSAD screen control).<br>
+<br>
+    <strong>Ctrl + Left mouse click drag</strong> - add objects to selection by 
+    dragging selection region (can be combinated with WSAD screen control).<br>
+    <strong>Alt + Left mouse click drag</strong> - substract objects from selection 
+    by dragging selection region (can be combinated with WSAD screen control).<br>
+    <strong>Shift + Left mouse click drag over selection</strong> - select object 
+    behind selected object.<br>
+  </div>
+<br>
+  <em>Keyboard shortcuts:</em><br>
+<br>
+  <div class="sub"> <strong>Ctrl + Z</strong> - undo.<br>
+    <strong>Ctrl + Y</strong> - redo.<br>
+<br>
+    <strong>Delete / Backspace</strong> - delete selected objects.<br>
+    <br>
+    <strong>H</strong> - mirrors selected objects horizontally.<br>
+    <strong>V</strong> - mirrors selected objects vertically.<br>
+<br>
+    <strong>W/S/A/D</strong> - move screen in 4 directions (can be mentioned as 
+    WSAD screen control).<br>
+    <strong>Shift + W/S/A/D</strong> - move screen in 4 directions faster.<br>
+<br>
+    <strong>Q</strong> - toggle additonal panels auto-hide.<br>
+<br>
+    <strong>Ctrl + C</strong> - copy selected objects to "Primary" clipboard.<br>
+    <strong>Ctrl + V</strong> - paste objects from "Primary" clipboard.<br>
+<br>
+<strong>Ctrl + 1</strong> - copy selected objects to "Secondary 1" clipboard.<br>
+<strong>Ctrl + 2</strong> - copy selected objects to "Secondary 2" clipboard.<br>
+<strong>Ctrl + 3</strong> - copy selected objects to "Secondary 3" clipboard.<br>
+<strong>Ctrl + 4</strong> - copy selected objects to "Secondary 4" clipboard.<br>
+<strong>Ctrl + 5</strong> - copy selected objects to "Secondary 5" clipboard.<br>
+<strong>Ctrl + 6</strong> - copy selected objects to "Secondary 6" clipboard.<br>
+<strong>Ctrl + 7</strong> - copy selected objects to "Secondary 7" clipboard.<br>
+<strong>Ctrl + 8</strong> - copy selected objects to "Secondary 8" clipboard.<br>
+<strong>Ctrl + 9</strong> - copy selected objects to "Secondary 9" clipboard.<br>
+<strong>Ctrl + 0</strong> - copy selected objects to "Secondary 0" clipboard.<br>
+<br>
+<strong>1</strong> - paste objects from "Secondary 1" clipboard.<br>
+<strong>2</strong> - paste objects from "Secondary 2" clipboard.<br>
+<strong>3</strong> - paste objects from "Secondary 3" clipboard.<br>
+<strong>4</strong> - paste objects from "Secondary 4" clipboard.<br>
+<strong>5</strong> - paste objects from "Secondary 5" clipboard.<br>
+<strong>6</strong> - paste objects from "Secondary 6" clipboard.<br>
+<strong>7</strong> - paste objects from "Secondary 7" clipboard.<br>
+<strong>8</strong> - paste objects from "Secondary 8" clipboard.<br>
+<strong>9</strong> - paste objects from "Secondary 9" clipboard.<br>
+<strong>0</strong> - paste objects from "Secondary 0" clipboard.<br>
+</div>
+</div><br>
+
+<h3>6. Tutorials, additional info, examples</h3>
+<div class="sub">
+<div class="sub"><a href="https://www.plazmaburst2.com/level_editor_manual/triggers.html">Triggers</a></div><br>
+More info might appear here (feel free to suggest).
+</div><br>
+
+<h3>7. Approvable maps</h3>
+<div class="sub">To learn how get your map approved, you may check <a href="https://www.plazmaburst2.com/level_editor_manual/requirements%20for%20map%20approval.html">Requirements 
+  for map approval</a> page. This page also contain some recommendations on how 
+  you can make your map better, even if you don't want your map to be approved 
+  or your map can't be approved due to it being created for single player mode 
+  orientation.</div>
+<br>
+<h3>8. Errors</h3>
+<div class="sub"> Sometimes, when you test your map you might see some Errors.<br>
+  <br>
+  To avoid any type of Errors, we recommend testing your map from time to time 
+  during it's development. This way when your map has an error, it will stop working 
+  and you will know what the problem is and the problem could be connected with 
+  recent changes/additions made to the map.<br>
+<br>
+  But still, Errors can occur sometimes. Feel free to ask on our forum about any 
+  questions or issues you might be experiencing and we will try to help you. Each 
+  time you ask for help on a certain Error please specify the: <strong>Map ID</strong> 
+  of the map that has the Error, <strong>Error code</strong> and <strong>LoadMap_StopAddress</strong>. 
+  <br>
+  <br>
+  When a problem is solved we will update following table of known Errors:<br>
+<br>
+    
+  <table cellpadding="10" cellspacing="1" style="background-color:#AAAAAA">
+    <tbody><tr> 
+      <td><strong>Token</strong></td>
+      <td><strong>Error code</strong></td>
+      <td><strong>LoadMap_StopAddress</strong></td>
+      <td><strong>Solution</strong></td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>Flash player plugin crashed</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Something unusual happends during loading or level execution, 
+        for example map requested too much RAM.<br> 
+        <br>
+      This can happen when there is <strong>Lamp</strong> object(s) with high value of "power" parameter (we recommend values below 1).</td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>Players can't swim in <strong>Water area</strong> object</td>
+      <td>-</td>
+      <td>-</td>
+      <td>Recreate the <strong>Water area</strong> object or resize it. It can 
+        happen due to negative size of <strong>Water area</strong> object.</td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>Game freezes or freezes partially</td>
+      <td>-</td>
+      <td>-</td>
+      <td>It can happen when game tries to execute the<strong> Trigger</strong> 
+        that is contain an error of some sort in it's parameters.</td>
+    </tr>
+    <tr align="left" valign="top"> 
+      <td>Map loads forever (or 15+ seconds)</td>
+      <td>1502</td>
+      <td>any</td>
+      <td>The map was unable to load in the allowed period of time (15 seconds).<br> 
+        <br>
+        Problem is connected with expensive calculations during map loading, for 
+        example: "shadows" in the map are calculations, global illumination 
+        calculations, snow generation, wall texture generation, too high "power" 
+        parameter of <strong>Lamp</strong> objects.</td>
+    </tr>
+    <tr align="left" valign="top">
+      <td>Wrong parameter value on background object</td>
+      <td>2004</td>
+      <td>1309</td>
+      <td>Zoom out your map in Level Editor and then select everything with selection 
+        region. Then take a look at <strong>Objects list</strong> - there you 
+        might see objects which are not selected. Select them with click in <strong>Object 
+        list</strong> and manually change their position and size parameter values 
+        to correct ones or simply remove these objects.</td>
+    </tr>
+    <tr align="left" valign="top">
+      <td>Map load fails</td>
+      <td>1010</td>
+      <td>8</td>
+      <td>While Error code generally says about some object's property pointing towards non-existing object (meaning it was renamed or removed), LoadMap_StopAddress of 8 means it happened during level attachments handling or water objects construction (most probably not due to water). Try to verify properties of attached objects for red "ERROR" values.</td>
+    </tr>
+  </tbody></table>
+    <br>
+  <em><br>
+  Note: This table mostly reflects only Level Editor v1.4 errors. If development 
+  was started at Level Editor v0.9 or you had copied some parts from map which 
+  development was started in Level Editor v0.9 - please look corresponding section 
+  for error solution in <a href="https://www.plazmaburst2.com/level_editor_manual/index_en.htm">Level Editor v0.9 Manual</a>.</em><br>
+</div>
+<br>
+<br>
+<br>
+
+
+
+
+</body></html>

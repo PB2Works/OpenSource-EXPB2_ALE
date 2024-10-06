@@ -1,0 +1,3730 @@
+[{
+	"opcode": -1,
+	"alias": "",
+	"expanded": false,
+	"description": "Do nothing",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 0,
+	"alias": "MovableTo",
+	"expanded": false,
+	"description": "Movable &#8250; Force Movable 'A' move to region 'B'",
+	"altDisplay": "",
+	"paramA": "door",
+	"paramB": "region"
+},{
+	"opcode": 1,
+	"alias": "SetMovableSpeed",
+	"expanded": false,
+	"description": "Movable &#8250; Change Speed of Movable 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "door",
+	"paramB": "value>=0"
+},{
+	"opcode": 2,
+	"alias": "RegionToRegion",
+	"expanded": false,
+	"description": "Region &#8250; Quickly move Region with name 'A' to the position of the region with name 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 3,
+	"alias": "ChangeVehHPPerc",
+	"expanded": false,
+	"description": "Vehicle &#8250; Change the number of hit points of Vehicle 'A' to 'B' percents",
+	"altDisplay": "",
+	"paramA": "vehicle",
+	"paramB": "value"
+},{
+	"opcode": 4,
+	"alias": "ChangeCharHPPerc",
+	"expanded": false,
+	"description": "Character &#8250; Change the number of hit points of Character 'A' to 'B' percents",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 5,
+	"alias": "SetGravity",
+	"expanded": false,
+	"description": "Gravity &#8250; Change the gravity to the value 'A' (Default is 0.5)",
+	"altDisplay": "",
+	"paramA": "value",
+	"paramB": "nochange"
+},{
+	"opcode": 6,
+	"alias": "DamageRegion",
+	"expanded": false,
+	"description": "Region &#8250; Make damage in Region 'B' with power of 'A' hit points",
+	"altDisplay": "",
+	"paramA": "value",
+	"paramB": "region"
+},{
+	"opcode": 9,
+	"alias": "EndMission",
+	"expanded": false,
+	"description": "Scenario &#8250; End mission with reason 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 10,
+	"alias": "StabilityDamageRegion",
+	"expanded": false,
+	"description": "Region &#8250; Harm the stability with power 'A' of all Characters located at Region with the name 'B'",
+	"altDisplay": "",
+	"paramA": "value",
+	"paramB": "region"
+},{
+	"opcode": 11,
+	"alias": "KillUnaliedInRegion",
+	"expanded": false,
+	"description": "Region &#8250; Kill all Characters at Region 'B' which are not allied to Character 'A'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "region"
+},{
+	"opcode": 12,
+	"alias": "DestroyVehsInRegion",
+	"expanded": false,
+	"description": "Region &#8250; Destroy all vehicles in Region 'A'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "nochange"
+},{
+	"opcode": 13,
+	"alias": "PutCharInVeh",
+	"expanded": false,
+	"description": "Character &#8250; Put Character 'A' into the Vehicle 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "vehicle"
+},{
+	"opcode": 14,
+	"alias": "MoveCharToReguin",
+	"expanded": false,
+	"description": "Character &#8250; Move Character 'A' to the region 'B' (if Character alive)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "region"
+},{
+	"opcode": 15,
+	"alias": "MoveGunToReguin",
+	"expanded": false,
+	"description": "Gun &#8250; Move Gun 'A' to the Region 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "region"
+},{
+	"opcode": 16,
+	"alias": "MoveBarrelToReguin",
+	"expanded": false,
+	"description": "Barrel &#8250; Move Barrel 'A' to the Region 'B' (if Barrel not exploded)",
+	"altDisplay": "",
+	"paramA": "barrel",
+	"paramB": "region"
+},{
+	"opcode": 17,
+	"alias": "",
+	"expanded": false,
+	"description": "Vehicle &#8250; Move Vehicle 'A' to the Region 'B' (if Vehicle didn't explode)",
+	"altDisplay": "",
+	"paramA": "vehicle",
+	"paramB": "region"
+},{
+	"opcode": 18,
+	"alias": "RegionToRegionCenter",
+	"expanded": false,
+	"description": "Region &#8250; Move Region 'A' to the Region 'B' (centres will be located in the same point)",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 19,
+	"alias": "TriggerDisable",
+	"expanded": false,
+	"description": "Trigger &#8250; Deactivate Trigger 'A'",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "nochange"
+},{
+	"opcode": 20,
+	"alias": "TriggerEnable",
+	"expanded": false,
+	"description": "Trigger &#8250; Activate Trigger 'A'",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "nochange"
+},{
+	"opcode": 21,
+	"alias": "TriggerSetCalls0",
+	"expanded": false,
+	"description": "Trigger &#8250; Set number of remain calls of Trigger 'A' to 0",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "nochange"
+},{
+	"opcode": 22,
+	"alias": "TriggerSetCallsValue",
+	"expanded": false,
+	"description": "Trigger &#8250; Set number of remain calls of Trigger 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "maxcalls"
+},{
+	"opcode": 23,
+	"alias": "SetCharHP",
+	"expanded": false,
+	"description": "Character &#8250; Set current hit points of Character 'A' to 'B' hit points (not sets hit points of each limb)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "int"
+},{
+	"opcode": 24,
+	"alias": "ExplosionRegion",
+	"expanded": false,
+	"description": "Region &#8250; Make an explosion with power 'A' at Region 'B'",
+	"altDisplay": "",
+	"paramA": "value>=0",
+	"paramB": "region"
+},{
+	"opcode": 25,
+	"alias": "TimerEnable",
+	"expanded": false,
+	"description": "Timer &#8250; Activate Timer 'A'",
+	"altDisplay": "",
+	"paramA": "timer",
+	"paramB": "nochange"
+},{
+	"opcode": 26,
+	"alias": "TimerDisable",
+	"expanded": false,
+	"description": "Timer &#8250; Deactivate Timer 'A'",
+	"altDisplay": "",
+	"paramA": "timer",
+	"paramB": "nochange"
+},{
+	"opcode": 27,
+	"alias": "TimerSetFrequency",
+	"expanded": false,
+	"description": "Timer &#8250; Set the frequency of calls of Timer 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "timer",
+	"paramB": "int"
+},{
+	"opcode": 28,
+	"alias": "CloneCharInRegionCentre",
+	"expanded": false,
+	"description": "Character &#8250; Clone Character 'A' and spawn it in the centre of Region 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "region"
+},{
+	"opcode": 29,
+	"alias": "ForceRegionHuntForChar",
+	"expanded": false,
+	"description": "Region &#8250; Force all enemies of Character 'A' who located in region 'B' hunt for Character 'A'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "region"
+},{
+	"opcode": 30,
+	"alias": "TeleportFromRegionToRegion",
+	"expanded": false,
+	"description": "Region &#8250; Teleport all players from Region 'A' to Region 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 31,
+	"alias": "TeleportFromRegionToRegionFlip",
+	"expanded": false,
+	"description": "Region &#8250; Teleport all players from Region 'A' to Region 'B' and invert speed by X axis (used to avoid loop teleportation)",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 32,
+	"alias": "SetAIBehavior",
+	"expanded": false,
+	"description": "Character &#8250; Set ''AI Behavior'' parameter of computer-controlled Character 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "botaction"
+},{
+	"opcode": 33,
+	"alias": "SetCharTeam",
+	"expanded": false,
+	"description": "Character &#8250; Change team of Character 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "team"
+},{
+	"opcode": 34,
+	"alias": "SetDecorModel",
+	"expanded": false,
+	"description": "Decoration &#8250; Change model of Decoration 'A' to model named 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "decor_model"
+},{
+	"opcode": 35,
+	"alias": "SetPusherAccelX",
+	"expanded": false,
+	"description": "Gravitator Area Field &#8250; Set X acceleration of Gravitator Area Field 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "pushf",
+	"paramB": "value"
+},{
+	"opcode": 36,
+	"alias": "SetPusherAccelY",
+	"expanded": false,
+	"description": "Gravitator Area Field &#8250; Set Y acceleration of Gravitator Area Field 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "pushf",
+	"paramB": "value"
+},{
+	"opcode": 37,
+	"alias": "SetPusherStabilityDmg",
+	"expanded": false,
+	"description": "Gravitator Area Field &#8250; Set stability damage of Gravitator Area Field 'A' to value 'B' (0 for disable)",
+	"altDisplay": "",
+	"paramA": "pushf",
+	"paramB": "value>=0"
+},{
+	"opcode": 38,
+	"alias": "SetPusherHPDmg",
+	"expanded": false,
+	"description": "Gravitator Area Field &#8250; Set damage of Gravitator Area Field 'A' to value 'B' (0 for disable)",
+	"altDisplay": "",
+	"paramA": "pushf",
+	"paramB": "pushf_damage"
+},{
+	"opcode": 39,
+	"alias": "SetGameSpeed",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set game speed to 'A' frames per second (default game speed is 30. Does not influence rendering)",
+	"altDisplay": "",
+	"paramA": "value>=0",
+	"paramB": "nochange"
+},{
+	"opcode": 40,
+	"alias": "SetStrictCasualMode",
+	"expanded": false,
+	"description": "Gameplay &#8250; Change Strict Casual Mode status",
+	"altDisplay": "",
+	"paramA": "enable-disable",
+	"paramB": "nochange"
+},{
+	"opcode": 41,
+	"alias": "PlaySound",
+	"expanded": false,
+	"description": "Sound &#8250; Play sound 'A' from library",
+	"altDisplay": "",
+	"paramA": "sound",
+	"paramB": "nochange"
+},{
+	"opcode": 42,
+	"alias": "ShowText",
+	"expanded": false,
+	"description": "Interface &#8250; Show text 'A' in chat with color 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "textmsg",
+	"side": "both"
+},{
+	"opcode": 43,
+	"alias": "SetHint",
+	"expanded": false,
+	"description": "Interface &#8250; Show hint with text 'A'. Leave 'A' as empty to force hint dissapear",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 44,
+	"alias": "ResetTimerPhase",
+	"expanded": false,
+	"description": "Timer &#8250; Reset current phase of between-call waiting of Timer 'A'",
+	"altDisplay": "",
+	"paramA": "timer",
+	"paramB": "nochange"
+},{
+	"opcode": 45,
+	"alias": "SetAIHeal",
+	"expanded": false,
+	"description": "Gameplay &#8250; Allow or disallow usage of defibrillators by allies with value of parameter 'A'",
+	"altDisplay": "",
+	"paramA": "enable-disable",
+	"paramB": "nochange"
+},{
+	"opcode": 46,
+	"alias": "SetTimerCalls",
+	"expanded": false,
+	"description": "Timer &#8250; Set remain calls number of Timer 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "timer",
+	"paramB": "maxcalls"
+},{
+	"opcode": 48,
+	"alias": "MultCharCurrentMaxHPPercent",
+	"expanded": false,
+	"description": "Character &#8250; Multiply maximal and current hit points of Character 'A' by 'B' percents. Not for multiplayer",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 49,
+	"alias": "SetSwords",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set Disabling of psi swords to value of parameter 'A'",
+	"altDisplay": "",
+	"paramA": "enable-disable",
+	"paramB": "nochange"
+},{
+	"opcode": 50,
+	"alias": "NextMap",
+	"expanded": false,
+	"description": "Scenario &#8250; Mission complete and switch to level with ID 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 51,
+	"alias": "Zoom",
+	"expanded": false,
+	"description": "Gameplay &#8250; Zoom game camera to 'A' % (percents)",
+	"altDisplay": "",
+	"paramA": "value>0",
+	"paramB": "nochange"
+},{
+	"opcode": 52,
+	"alias": "SetCharNickname",
+	"expanded": false,
+	"description": "Character &#8250; Change Character 'A' nickname to 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 53,
+	"alias": "CloneCharToRegionRandomY",
+	"expanded": false,
+	"description": "Character &#8250; Clone Character 'A' and spawn it in random place in Region 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "region"
+},{
+	"opcode": 54,
+	"alias": "LightOn",
+	"expanded": false,
+	"description": "Light &#8250; Turn light 'A' on",
+	"altDisplay": "",
+	"paramA": "lamp",
+	"paramB": "nochange"
+},{
+	"opcode": 55,
+	"alias": "LightOff",
+	"expanded": false,
+	"description": "Light &#8250; Turn light 'A' off",
+	"altDisplay": "",
+	"paramA": "lamp",
+	"paramB": "nochange"
+},{
+	"opcode": 56,
+	"alias": "FlipXVelocityRegion",
+	"expanded": false,
+	"description": "Region &#8250; Flip X speed for all players in region 'B'",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "region"
+},{
+	"opcode": 57,
+	"alias": "FlipYVelocityRegion",
+	"expanded": false,
+	"description": "Region &#8250; Flip Y speed for all players in region 'B'",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "region"
+},{
+	"opcode": 58,
+	"alias": "SetCharSkin",
+	"expanded": false,
+	"description": "Character &#8250; Change Character 'A' skin to 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "char"
+},{
+	"opcode": 59,
+	"alias": "SetCharCurrentMaxHPValue",
+	"expanded": false,
+	"description": "Character &#8250; Set Character 'A' current and max hit points to value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 60,
+	"alias": "MakeCharDropGuns",
+	"expanded": false,
+	"description": "Character &#8250; Force Character 'A' to drop all weapons",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "nochange"
+},{
+	"opcode": 61,
+	"alias": "MultCharSpeed",
+	"expanded": false,
+	"description": "Character &#8250; Multiply Character 'A' speed by value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 62,
+	"alias": "SetGunProjectileCount",
+	"expanded": false,
+	"description": "Gun &#8250; Force Gun 'A' spawn 'B' projectiles per shot",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "value"
+},{
+	"opcode": 63,
+	"alias": "SetGunAccuracy",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' accuracy to 'B' degress",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "value"
+},{
+	"opcode": 64,
+	"alias": "SetGunPower",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' projectile power to 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "value"
+},{
+	"opcode": 65,
+	"alias": "TurnGunProjectileBullets",
+	"expanded": false,
+	"description": "Gun &#8250; Convert Gun 'A' projectiles into bullets",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "nochange"
+},{
+	"opcode": 66,
+	"alias": "TurnGunProjectileRails",
+	"expanded": false,
+	"description": "Gun &#8250; Convert Gun 'A' projectiles into rails",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "nochange"
+},{
+	"opcode": 67,
+	"alias": "TurnGunProjectileGrenades",
+	"expanded": false,
+	"description": "Gun &#8250; Convert Gun 'A' projectiles into grenades",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "nochange"
+},{
+	"opcode": 68,
+	"alias": "TurnGunProjectileEnergy",
+	"expanded": false,
+	"description": "Gun &#8250; Convert Gun 'A' projectiles into energy",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "nochange"
+},{
+	"opcode": 69,
+	"alias": "TurnGunProjectileRockets",
+	"expanded": false,
+	"description": "Gun &#8250; Convert Gun 'A' projectiles into rockets",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "nochange"
+},{
+	"opcode": 70,
+	"alias": "TeleportInitiatorFromTo",
+	"expanded": false,
+	"description": "Region &#8250; Teleport player-initiator from Region 'A' to Region 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 71,
+	"alias": "SetMovableColor",
+	"expanded": false,
+	"description": "Movable &#8250; Change color of Movable 'A' to HEX color 'B'",
+	"altDisplay": "",
+	"paramA": "door",
+	"paramB": "string"
+},{
+	"opcode": 72,
+	"alias": "MultCharsSpeedsAtRegion",
+	"expanded": false,
+	"description": "Region &#8250; Multiply speed of players in Region 'A' by value 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "value"
+},{
+	"opcode": 73,
+	"alias": "SetBulletSpeed",
+	"expanded": false,
+	"description": "Gameplay &#8250; Change bullet speed to value 'A' (default value is 60)",
+	"altDisplay": "",
+	"paramA": "value",
+	"paramB": "nochange"
+},{
+	"opcode": 74,
+	"alias": "SetBulletPenetration",
+	"expanded": false,
+	"description": "Gameplay &#8250; Change bullet penetration factor to value 'A' (default value is 1)",
+	"altDisplay": "",
+	"paramA": "value",
+	"paramB": "nochange"
+},{
+	"opcode": 75,
+	"alias": "SetBulletMaxLife",
+	"expanded": false,
+	"description": "Gameplay &#8250; Change max bullet life value 'A' (default value is 30)",
+	"altDisplay": "",
+	"paramA": "value",
+	"paramB": "nochange"
+},{
+	"opcode": 76,
+	"alias": "SetGunForChars",
+	"expanded": false,
+	"description": "Gun &#8250; Allow Gun 'A' only for characters",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "nochange"
+},{
+	"opcode": 77,
+	"alias": "SetGunForVehicles",
+	"expanded": false,
+	"description": "Gun &#8250; Allow Gun 'A' only for vehicles",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "nochange"
+},{
+	"opcode": 78,
+	"alias": "SetGunSlot",
+	"expanded": false,
+	"description": "Gun &#8250; Set Gun 'A' slot to 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "int"
+},{
+	"opcode": 79,
+	"alias": "MoveRegionToCharInitiator",
+	"expanded": false,
+	"description": "Region &#8250; Move Region 'A' to player-initiator",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "nochange"
+},{
+	"opcode": 80,
+	"alias": "MoveRegionToChar",
+	"expanded": false,
+	"description": "Region &#8250; Move Region 'A' to player 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "character"
+},{
+	"opcode": 81,
+	"alias": "MakeGunExecTriggerOnFire",
+	"expanded": false,
+	"description": "Gun &#8250; Call Trigger 'B' when Gun 'A' fired",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "trigger"
+},{
+	"opcode": 82,
+	"alias": "MakeMovableExecTriggerOnDamage",
+	"expanded": false,
+	"description": "Movable &#8250; Call Trigger 'B' when Movable 'A' got damage",
+	"altDisplay": "",
+	"paramA": "door",
+	"paramB": "trigger"
+},{
+	"opcode": 83,
+	"alias": "AddRegionPosX",
+	"expanded": false,
+	"description": "Region &#8250; Move Region 'A' relative to current position along X",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "value"
+},{
+	"opcode": 84,
+	"alias": "AddRegionPosY",
+	"expanded": false,
+	"description": "Region &#8250; Move Region 'B' relative to current position along Y",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "value"
+},{
+	"opcode": 85,
+	"alias": "MuteMovable",
+	"expanded": false,
+	"description": "Movable &#8250; Mute Movable 'A'",
+	"altDisplay": "",
+	"paramA": "door",
+	"paramB": "nochange"
+},{
+	"opcode": 86,
+	"alias": "UnmuteMovable",
+	"expanded": false,
+	"description": "Movable &#8250; Unmute Movable 'A'",
+	"altDisplay": "",
+	"paramA": "door",
+	"paramB": "nochange"
+},{
+	"opcode": 87,
+	"alias": "MoveRegionToInitiatorCursor",
+	"expanded": false,
+	"description": "Region &#8250; Move Region 'A' to player-initiator's cursor",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "nochange"
+},{
+	"opcode": 88,
+	"alias": "SetCharMobility",
+	"expanded": false,
+	"description": "Character &#8250; Change Character 'A' mobility factor to 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 89,
+	"alias": "SetCharArmor",
+	"expanded": false,
+	"description": "Character &#8250; Change Character 'A' armor type to 'B' (0, 1 or 2)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "int"
+},{
+	"opcode": 90,
+	"alias": "SetCharBloodColor",
+	"expanded": false,
+	"description": "Character &#8250; Change blood color of Character 'A' to HEX color 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 91,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set horizontal movement on idle Character 'A' to value 'B' (0, -1 or 1)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "int"
+},{
+	"opcode": 92,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set vertical movement on idle Character 'A' to value 'B' (0, -1 or 1)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "int"
+},{
+	"opcode": 93,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set shoot action on idle Character 'A' to value 'B' (0 or 1)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "int"
+},{
+	"opcode": 94,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Force Character 'A' to look at random point in Region 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "region"
+},{
+	"opcode": 95,
+	"alias": "",
+	"expanded": false,
+	"description": "Trigger execution &#8250; Continue execution of this trigger only if tracing from center of Region 'A' to center of Region 'B' is possible",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 96,
+	"alias": "",
+	"expanded": false,
+	"description": "Trigger execution &#8250; Continue execution of this trigger only if tracing from center of Region 'A' to center of Region 'B' is impossible",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 97,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Force Character 'A' to hunt Character 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "character"
+},{
+	"opcode": 98,
+	"alias": "",
+	"expanded": false,
+	"description": "Region &#8250; Move Region 'A' to Movable 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "door"
+},{
+	"opcode": 99,
+	"alias": "ExecTrigger",
+	"expanded": false,
+	"description": "Trigger execution &#8250; Execute trigger 'A'",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "nochange"
+},{
+	"opcode": 100,
+	"alias": "VarSetValue",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' value to value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 101,
+	"alias": "VarSetValueIfUndefined",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' value to value 'B' if 'A' is not defined",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 102,
+	"alias": "VarAddValue",
+	"expanded": false,
+	"description": "Var &#8250; Add value 'B' to value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 103,
+	"alias": "VarMultValue",
+	"expanded": false,
+	"description": "Var &#8250; Multiply value of variable 'A' by value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 104,
+	"alias": "VarAddVar",
+	"expanded": false,
+	"description": "Var &#8250; Add value of variable 'B' to value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 105,
+	"alias": "VarMultVar",
+	"expanded": false,
+	"description": "Var &#8250; Multiply value of variable 'A' by value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 106,
+	"alias": "VarRand1",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to random number with floating point in range 0..B",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 107,
+	"alias": "VarRandRange",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to random integer number in range 0..B-1",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 108,
+	"alias": "VarRound",
+	"expanded": false,
+	"description": "Var &#8250; Round value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 109,
+	"alias": "VarFloor",
+	"expanded": false,
+	"description": "Var &#8250; Floor value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 110,
+	"alias": "continue if VarA > VarB ",
+	"expanded": false,
+	"description": "Var &#8250; Continue trigger actions execution only if variable 'A' is greater than variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 111,
+	"alias": "continue if VarA < VarB ",
+	"expanded": false,
+	"description": "Var &#8250; Continue trigger actions execution only if variable 'A' is less than variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 112,
+	"alias": "continue if VarA == VarB ",
+	"expanded": false,
+	"description": "Var &#8250; Continue trigger actions execution only if variable 'A' equals variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 113,
+	"alias": "continue if VarA != VarB ",
+	"expanded": false,
+	"description": "Var &#8250; Continue trigger actions execution only if variable 'A' does not equals to variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 114,
+	"alias": "continue if VarA > ValueB ",
+	"expanded": false,
+	"description": "Var &#8250; Continue trigger actions execution only if variable 'A' has greater value than value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 115,
+	"alias": "continue if VarA < ValueB ",
+	"expanded": false,
+	"description": "Var &#8250; Continue trigger actions execution only if value of variable 'A' is less than value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 116,
+	"alias": "continue if VarA == ValueB ",
+	"expanded": false,
+	"description": "Var &#8250; Continue trigger actions execution only if value of variable 'A' equals value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 117,
+	"alias": "continue if VarA != ValueB ",
+	"expanded": false,
+	"description": "Var &#8250; Continue trigger actions execution only if value of variable 'A' does not equals to value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 118,
+	"alias": "VarSetRegionX",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to value of region 'B' X position of left-top corner point",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "region"
+},{
+	"opcode": 119,
+	"alias": "VarSetRegionY",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to value of region 'B' Y position of left-top corner point",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "region"
+},{
+	"opcode": 120,
+	"alias": "RegionXSetVar",
+	"expanded": false,
+	"description": "Var &#8250; Set X position of 'A' region left-top corner point to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "string"
+},{
+	"opcode": 121,
+	"alias": "RegionYSetVar",
+	"expanded": false,
+	"description": "Var &#8250; Set Y position of 'A' region left-top corner point to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "string"
+},{
+	"opcode": 122,
+	"alias": "VarSetCharHP",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to hitpoints value of player 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 123,
+	"alias": "next if VarA == ValueB",
+	"expanded": false,
+	"description": "Var &#8250; Skip next trigger action if value of variable 'A' does not equals value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 124,
+	"alias": "VarSetModuloDivValue",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' value to remainder after division by value 'B' (only positive numbers)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 125,
+	"alias": "VarSetVar",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' value to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 126,
+	"alias": "ExplosionVarRegion",
+	"expanded": false,
+	"description": "Var &#8250; Make an explosion with power of value of variable 'A' at Region 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "region"
+},{
+	"opcode": 127,
+	"alias": "VarSetModuloDivVar",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' value to remainder after division by value of variable 'B' (only positive numbers)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 128,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Force Gun 'A' spawn value of variable 'B' projectiles per shot",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 129,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Change Gun 'A' accuracy to value of variable 'B' degress",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 130,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Change Gun 'A' projectile power to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 131,
+	"alias": "VarDivValue",
+	"expanded": false,
+	"description": "Var &#8250; Divide variable 'A' by value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 132,
+	"alias": "VarDivVar",
+	"expanded": false,
+	"description": "Var &#8250; Divide variable 'A' by value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 133,
+	"alias": "VarPowVar",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to result of power function with value of variable 'A' and power of value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 134,
+	"alias": "VarPowValue",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to result of power function with value of variable 'A' and power of value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 135,
+	"alias": "VarSinVar",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to result of sin function with value of variable 'B' (in radians) as parameter",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 136,
+	"alias": "VarCosVar",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to result of cos function with value of variable 'B' (in radians) as parameter",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 137,
+	"alias": "SetACurrentPlayerSlot",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to slot of current player",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 138,
+	"alias": "SetIsMP",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to 1 if game is in multiplyer mode and to 0 in else case",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 139,
+	"alias": "SetIsSpectator",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to 1 if my player is spectating this match as spectator and to 0 in else case",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 140,
+	"alias": "SetIsLowPhys",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to 1 if LOW PHYSICS setting is enabled and to 0 in else case",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 141,
+	"alias": "DamageHead",
+	"expanded": false,
+	"description": "Character &#8250; Damage player 'A' head hitpoints by value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 142,
+	"alias": "DamageArms",
+	"expanded": false,
+	"description": "Character &#8250; Damage player 'A' arms hitpoints by value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 143,
+	"alias": "DamageBody",
+	"expanded": false,
+	"description": "Character &#8250; Damage player 'A' body hitpoints by value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 144,
+	"alias": "DamageLegs",
+	"expanded": false,
+	"description": "Character &#8250; Damage player 'A' legs hitpoints by value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 145,
+	"alias": "SetCountAliveInRegion",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to number of alive players in region 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "region"
+},{
+	"opcode": 146,
+	"alias": "SetLoginOfInitiator",
+	"expanded": false,
+	"description": "Var &#8250; Set string-value of variable 'A' to login name of player-initiator",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 147,
+	"alias": "SetNicknameOfInitiator",
+	"expanded": false,
+	"description": "Var &#8250; Set string-value of variable 'A' to displayed name of player-initiator",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 148,
+	"alias": "SetMPMode",
+	"expanded": false,
+	"description": "Var &#8250; Set string-value of variable 'A' to multiplayer match name",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 149,
+	"alias": "SetIsAContainsValueB",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to 1 if string-value of variable 'A' contains string-value 'B' and to 0 in else case",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 150,
+	"alias": "SetIsAContainsVarB",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to 1 if string-value of variable 'A' contains string-value of variable 'B' and to 0 in else case",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 151,
+	"alias": "CountLength",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to length of string-value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 152,
+	"alias": "AddString",
+	"expanded": false,
+	"description": "Var &#8250; Add string-value of variable 'B' at the end of string-value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 153,
+	"alias": "OneMinusA",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to 1-A",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 154,
+	"alias": "MinusA",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to -A",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 155,
+	"alias": "GetGSPEED",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to current frame time",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 156,
+	"alias": "SetChatInputCallback",
+	"expanded": false,
+	"description": "Trigger &#8250; Set trigger 'A' as player chat message receiver",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "nochange",
+	"side": "both"
+},{
+	"opcode": 157,
+	"alias": "GetTalkerLogin",
+	"expanded": false,
+	"description": "Var &#8250; Set string-value of variable 'A' to login name of player who says text",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 158,
+	"alias": "GetTalkerNickname",
+	"expanded": false,
+	"description": "Var &#8250; Set string-value of variable 'A' to displayed name of player who says text",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 159,
+	"alias": "GetTalkerID",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to slot index of player who says text",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange",
+	"side": "both"
+},{
+	"opcode": 160,
+	"alias": "GetChatInput",
+	"expanded": false,
+	"description": "Var &#8250; Set string-value of variable 'A' to text being said",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange",
+	"side": "both"
+},{
+	"opcode": 161,
+	"alias": "",
+	"expanded": false,
+	"description": "Session vars &#8250; Clear all session variables",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 162,
+	"alias": "",
+	"expanded": false,
+	"description": "Session vars &#8250; Save value of regular variable 'B' to session variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 163,
+	"alias": "",
+	"expanded": false,
+	"description": "Session vars &#8250; Load value for regular variable 'B' from session variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 164,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Change head model of Character 'A' to model 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "char"
+},{
+	"opcode": 165,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Change body model of Character 'A' to model 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "char"
+},{
+	"opcode": 166,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Change arms model of Character 'A' to model 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "char"
+},{
+	"opcode": 167,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Change legs model of Character 'A' to model 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "char"
+},{
+	"opcode": 168,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set Character 'A' color pattern (4 small letters for each body sections, each represents first symbol of color in lowercase. - disables color change for specific section)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 169,
+	"alias": "",
+	"expanded": false,
+	"description": "URL &#8250; Request webpage with URL stored in variable 'A' and save response to variable 'B' once loaded (variable 'B' will be equal to ''loading...'' for some period of time)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 170,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' speed multiplier to value 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 171,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Change Gun 'A' speed multiplier to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 172,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' recoil multiplier to value 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 173,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Change Gun 'A' recoil multiplier to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 174,
+	"alias": "",
+	"expanded": false,
+	"description": "AI &#8250; Set global AI difficulty (easy = 1, normal = 2, hard = 3)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 175,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' projectile model to model with index 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 176,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Change Gun 'A' projectile model to model with index-value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 177,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to id of type of current multiplayer mode (0 = singleplayer, 1 = DM, 2 = COOP, 3 = TDM)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 178,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Save inventory info of Character 'B' to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 179,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Spawn all weapons stored in variable 'A' at position of Character 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 180,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to player-initiator slot",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 181,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to player-killer slot",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 182,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to login name of player-killer",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 183,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to displayed name of player-killer",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 184,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to login name of player with slot 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string",
+	"side": "both"
+},{
+	"opcode": 185,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to displayed name of player with slot 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string",
+	"side": "both"
+},{
+	"opcode": 186,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to team ID of player with slot 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 187,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to login name of player with slot-value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string",
+	"side": "both"
+},{
+	"opcode": 188,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to displayed name of player with slot-value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string",
+	"side": "both"
+},{
+	"opcode": 189,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to team ID of player with slot-value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 190,
+	"alias": "",
+	"expanded": false,
+	"description": "Interface &#8250; Enable multiplayer frag/death messages",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 191,
+	"alias": "",
+	"expanded": false,
+	"description": "Interface &#8250; Disable multiplayer frag/death messages",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 192,
+	"alias": "",
+	"expanded": false,
+	"description": "Environment &#8250; Change sky image",
+	"altDisplay": "",
+	"paramA": "sky_model",
+	"paramB": "nochange"
+},{
+	"opcode": 193,
+	"alias": "",
+	"expanded": false,
+	"description": "Environment &#8250; Change sky color HEX multiplier",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 194,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set respawn speed multiplier (defaults to 1, but 1.5 in ranked)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 195,
+	"alias": "",
+	"expanded": false,
+	"description": "Environment &#8250; Change sky color Red multiplier to value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 196,
+	"alias": "",
+	"expanded": false,
+	"description": "Environment &#8250; Change sky color Green multiplier to value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 197,
+	"alias": "",
+	"expanded": false,
+	"description": "Environment &#8250; Change sky color Blue multiplier to value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 198,
+	"alias": "",
+	"expanded": false,
+	"description": "Text-to-speech &#8250; Create Voice object and save it as variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 199,
+	"alias": "",
+	"expanded": false,
+	"description": "Text-to-speech &#8250; Set volume 'B' for Voice object 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 200,
+	"alias": "",
+	"expanded": false,
+	"description": "Text-to-speech &#8250; Set pitch 'B' for Voice object 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 201,
+	"alias": "",
+	"expanded": false,
+	"description": "Text-to-speech &#8250; Set voice model 'B' for Voice object 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 202,
+	"alias": "",
+	"expanded": false,
+	"description": "Text-to-speech &#8250; Speak text 'B' with Voice object 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 203,
+	"alias": "",
+	"expanded": false,
+	"description": "Text-to-speech &#8250; Speak text-value of variable 'B' with Voice object 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 204,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to result of asin function with value of variable 'B' as parameter",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 205,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to result of acos function with value of variable 'B' as parameter",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 206,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to result of atan2 function with values of variables 'A' and 'B' as parameters",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 207,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Enable anonymous mode (disable player overheads, chat messages are not show in chat)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 208,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Disable anonymous mode (enable player overheads, chat messages are show in chat)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 209,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set regeneration speed multiplier to value 'A' (defaults to 1)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 210,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set regeneration speed multiplier to value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 211,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set regeneration delay multiplier to value 'A' (defaults to 1, but 2 in ranked)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 212,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set regeneration delay multiplier to value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 213,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set physical player impact damage multiplier to 'A' (default is 1)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 214,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set physical player impact damage threshold to 'A' (higher values increase chance to receive any impact damage. Default for approved maps is 0.9, in else cases it is 1)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 215,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set self-boost force multiplier (default is 1)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 216,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set unstable self-boost force multiplier for HIGH physics setting (default for approved maps is 2.8, in else cases it is 1)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 217,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set unstable self-boost force multiplier for LOW physics setting (default is 1)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 218,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' target knockback multiplier to value 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 219,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' target knockback multiplier to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 220,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set Character 'A' scale to value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 221,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set Character 'A' scale to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 222,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set Character 'A' zoom to value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 223,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Synchronize value of variable 'A' through overriding value for all connected players (requires Var Sync engine mark)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 224,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Synchronize value of variable 'A' through keeping defined value (requires Var Sync engine mark)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 225,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Synchronize value of variable 'A' through keeping maximum value (requires Var Sync engine mark)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 226,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Synchronize value of variable 'A' through keeping minimum value (requires Var Sync engine mark)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 227,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Synchronize value of variable 'A' through keeping longest String value (requires Var Sync engine mark)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 228,
+	"alias": "",
+	"expanded": false,
+	"description": "Trigger &#8250; Call trigger 'A' each time new player joins the match",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "nochange"
+},{
+	"opcode": 229,
+	"alias": "",
+	"expanded": false,
+	"description": "Sound &#8250; Play song",
+	"altDisplay": "",
+	"paramA": "song+none",
+	"paramB": "nochange"
+},{
+	"opcode": 230,
+	"alias": "",
+	"expanded": false,
+	"description": "Trigger execution &#8250; Continue trigger actions execution only if value of session variable 'A' was set by map with ID 'B' (list of map IDs can be used, separated with commas without spaces)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 231,
+	"alias": "",
+	"expanded": false,
+	"description": "Decoration &#8250; Set text placeholder decoration text",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 232,
+	"alias": "",
+	"expanded": false,
+	"description": "Decoration &#8250; Set decoration HEX color multiplier",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 233,
+	"alias": "",
+	"expanded": false,
+	"description": "Decoration &#8250; Set decoration scale to value 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 234,
+	"alias": "",
+	"expanded": false,
+	"description": "Decoration &#8250; Set decoration scale to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 235,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' value to of projectile power (this trigger should receive damage from Movable)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 236,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Subtract projectile power from value of variable 'A' (this trigger should receive damage from Movable)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 237,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' max spread accuracy to value 'B' (in radians)",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 238,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' added spread accuracy to value 'B' (in radians) per shot",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 239,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Change Gun 'A' subtracted spread accuracy to value 'B' (in radians) over time",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 240,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set rocket projetiles' speed multiplier to value 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 241,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set grenade projetiles' speed multiplier to value 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 242,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Set plasma projetiles' speed multiplier to value 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 243,
+	"alias": "",
+	"expanded": false,
+	"description": "Map preview &#8250; Create Map Preview from Region 'A' (only owner can execute this. Prevent execution for other players in order to prevent lag)",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "string"
+},{
+	"opcode": 244,
+	"alias": "",
+	"expanded": false,
+	"description": "Text-to-speech &#8250; Set rate 'B' for Voice object 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 245,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Lock camera at region 'A' (region size must be 800x400 for zoom of 100%) with intensity multiplier 'B' (0..1)",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "string"
+},{
+	"opcode": 246,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Unlock camera from any region",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 247,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Save horizontal movement intention of character 'B' to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 248,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Save vertical movement intention of character 'B' to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 249,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Save shoot intention of character 'B' to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 250,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Enable kinetic module",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 251,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Disable kinetic module",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 252,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Rotate decoration to angle-value of variable 'B' (in degrees)",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 253,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Rotate decoration to angle-value 'B' (in degrees)",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 254,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Attempt healing of player-initiator by 'A' hit points. Stop trigger execution if player-initiator has maximum hit points or died",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 255,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Heal player 'A' by 'B' hit points",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 256,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Heal player 'A' by value of variable 'B' ",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 257,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Rotate decoration to angle-value of variable 'B' (in radians)",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 258,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Rotate decoration to angle-value 'B' (in radians)",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 259,
+	"alias": "",
+	"expanded": false,
+	"description": "Region &#8250; Move region 'A' to cursor of player 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "character"
+},{
+	"opcode": 260,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Assign sound 'B' as firing sound for weapon 'A'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "sound"
+},{
+	"opcode": 261,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Allow Time Warp",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 262,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Disallow Time Warp",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 263,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Save energy value to variable 'A' (gameplay)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 264,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Load energy value from variable 'A' (gameplay)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 265,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set max energy value to value of variable 'A' (gameplay)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 266,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Save current AI difficulty to variable 'A' (easy = 1, normal = 2, hard = 3)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 267,
+	"alias": "",
+	"expanded": false,
+	"description": "Decoration &#8250; Set decoration X scale to value 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 268,
+	"alias": "",
+	"expanded": false,
+	"description": "Decoration &#8250; Set decoration Y scale to value 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 269,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set player 'A' to skin 'B' but keep palette and limb",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "char"
+},{
+	"opcode": 270,
+	"alias": "SetPassivePushIntens",
+	"expanded": false,
+	"description": "Character &#8250; Set intensity scale of entity pushing force for player 'A' (default 0)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 271,
+	"alias": "SetPassivePushRadius",
+	"expanded": false,
+	"description": "Character &#8250; Set radius of entity pushing force for player 'A' (default 200)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 272,
+	"alias": "SetVoicePreset",
+	"expanded": false,
+	"description": "Character &#8250; Set Character 'A' voice preset to 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "voice_preset"
+},{
+	"opcode": 273,
+	"alias": "StartGhost",
+	"expanded": false,
+	"description": "Character &#8250; Add ghost effect to Character 'A'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "nochange"
+},{
+	"opcode": 274,
+	"alias": "StopGhost",
+	"expanded": false,
+	"description": "Character &#8250; Remove ghost effect from Character 'A'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "nochange"
+},{
+	"opcode": 275,
+	"alias": "",
+	"expanded": false,
+	"description": "Trigger execution &#8250; Continue trigger actions execution only if loading of custom images has been finished",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 276,
+	"alias": "",
+	"expanded": false,
+	"description": "Trigger execution &#8250; Continue trigger actions execution only if all custom images have been successfully loaded (any error will prevent execution until map is restarted)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 277,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Save current number of loaded custom images to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 278,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Save number of expected custom images on current level to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 279,
+	"alias": "SilentlyTeleportInitiatorFromTo",
+	"expanded": false,
+	"description": "Region &#8250; Silently teleport player-initiator from Region 'A' to Region 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 280,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to 1 if compromised song should play (if non-dying enemy is hunting player or player is hunting non-dying enemy). Sets to value 0.5 in case if song should be played more quietly (if there are non-dying enemies within radius of 400px). In else case sets to 0",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 281,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Apply damage-over-time effect to player-initiator with power 'A' and duration 'B' (30 duration = 1 second)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 282,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Remove all effects from player-initiator",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 283,
+	"alias": "",
+	"expanded": false,
+	"description": "Region &#8250; Spawn damage particles of Character 'A' at the center of Region 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "region"
+},{
+	"opcode": 284,
+	"alias": "PlaySoundAtRegion",
+	"expanded": false,
+	"description": "Sound &#8250; Play sound 'A' at Region 'B' (volume and stereo effect won't be updated once sound starts)",
+	"altDisplay": "",
+	"paramA": "sound",
+	"paramB": "region"
+},{
+	"opcode": 285,
+	"alias": "",
+	"expanded": false,
+	"description": "Experience &#8250; Reward player with experience points for level completion (singleplayer)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 286,
+	"alias": "",
+	"expanded": false,
+	"description": "Experience &#8250; Reward player-initiator with experience points for level completion (multiplayer)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 287,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Override existing Gun 'A' with a new gun with model 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "gun_model"
+},{
+	"opcode": 288,
+	"alias": "",
+	"expanded": false,
+	"description": "Trigger &#8250; Bind Trigger 'A' execution to key 'B' press event",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "string"
+},{
+	"opcode": 289,
+	"alias": "",
+	"expanded": false,
+	"description": "Trigger &#8250; Bind Trigger 'A' execution to key 'B' release event",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "string"
+},{
+	"opcode": 290,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set Character 'A' color pattern to string-value of variable 'B' (4 small letters for each limb, each represents first symbol of color in lowercase)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 291,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Disable automatic disabling of offscreen entities (automatic disabling is enabled by default)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 292,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Enable automatic disabling of offscreen entities (automatic disabling is enabled by default)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 293,
+	"alias": "",
+	"expanded": false,
+	"description": "Decoration &#8250; Mask Decoration 'A' with Decoration 'B' (Flash Player only)",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "decor"
+},{
+	"opcode": 294,
+	"alias": "VarSetValueOfVarNamed",
+	"expanded": false,
+	"description": "Var &#8250; Set value of variable 'A' to value of variable with name of string-value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 295,
+	"alias": "VarSetStringReplaceVarWithVarValues",
+	"expanded": false,
+	"description": "Var &#8250; Set string-value of variable 'A' to string-value 'B' while replacing all variable names found in string-value with corresponding variable values",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 296,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Override existing Gun 'A' with a new gun with model by string-value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 297,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set jump multiplier for player 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 298,
+	"alias": "",
+	"expanded": false,
+	"description": "Decoration &#8250; Set decoration 'A' visibility multiplier to value 'B' (0...1)",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 299,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set decoration 'A' visibility multiplier to value of variable 'B' (0...1)",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 300,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Move, rotate and flip Decoration 'A' to position of Gun 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "gun"
+},{
+	"opcode": 301,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Set Gun 'A' projectile scale to value 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 302,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set Gun 'A' projectile scale to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 303,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Set Gun 'A' arm 1 hold offset to 'B' (0..1)",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 304,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Set Gun 'A' arm 2 hold offset to 'B' (0..1)",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 305,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Set Gun 'A' holstered attachment to 'B' (0 = on leg, 1 = on back)",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 306,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Set Gun 'A' length to value 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 307,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Restart map (singleplayer)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 308,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Reset game termination logic (for example if game is about to end due to player's death)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 309,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Make all players leave map or multiplayer match",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 310,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Make player-initiator leave map or multiplayer match",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 311,
+	"alias": "",
+	"expanded": false,
+	"description": "Gameplay &#8250; Make player-killer leave map or multiplayer match",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 312,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set Character 'A' active weapon slot to 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 313,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Make Character 'A' drop weapon at current slot",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "nochange"
+},{
+	"opcode": 314,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to 1 if Character 'B' is dying (variable 'A' becomes 0 in else case)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 315,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to 1 if Character-initiator is dying (variable 'A' becomes 0 in else case)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 316,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to 1 if Character-killer is dying (variable 'A' becomes 0 in else case)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 317,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Set player-initiator team to 'B'",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "team"
+},{
+	"opcode": 318,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Make Character 'A' unhittable",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "nochange"
+},{
+	"opcode": 319,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Make Character 'A' hittable",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "nochange"
+},{
+	"opcode": 320,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Switch singleplayer control to Character 'A'. Set parameter 'B' to 1 if sound needs to be played",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 321,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Disallow weapon drop for Character 'A'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "nochange"
+},{
+	"opcode": 322,
+	"alias": "",
+	"expanded": false,
+	"description": "Character &#8250; Allow weapon drop for Character 'A'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "nochange"
+},{
+	"opcode": 323,
+	"alias": "",
+	"expanded": false,
+	"description": "Region &#8250; Move Region 'A' to Gun 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "gun"
+},{
+	"opcode": 324,
+	"alias": "",
+	"expanded": false,
+	"description": "Gun &#8250; Call Trigger 'B' when Gun 'A' was fully reloaded while being held by some character",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "trigger"
+},{
+	"opcode": 325,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Replace variables with their values in string-value of variable 'B' and save result to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 326,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Replace variables with their values in string-value 'B' and save result to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 327,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' value to random number with floating point in range 0..X, where X is value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 328,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' value to random integer number in range 0..X-1, where X is value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 329,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set interface visibility multiplier to value of variable 'A' and cursor visibility multiplier to value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 330,
+	"alias": "",
+	"expanded": false,
+	"description": "Interface &#8250; Set interface visibility multiplier to value 'A' and cursor visibility multiplier to value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 331,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' string-value to string-value of ''Gameplay modifications'' field from match starting screen",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 332,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to value 1 if Gun 'B' is not in owner's active slot, set to value 0 in else case",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "gun"
+},{
+	"opcode": 333,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to value 1 if Gun 'B' has owner, set to value 0 in else case",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "gun"
+},{
+	"opcode": 334,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to number of frames passed since last attack of Gun 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "gun"
+},{
+	"opcode": 335,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to value 1 if Gun 'B' is ready to fire, set to value 0 in else case",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "gun"
+},{
+	"opcode": 336,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to X direction of Gun 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "gun"
+},{
+	"opcode": 337,
+	"alias": "",
+	"expanded": false,
+	"description": "Var &#8250; Set variable 'A' to X direction of Character 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 338,
+	"alias": "",
+	"expanded": false,
+	"description": "Interface &#8250; Prevent alive players from seeing chat from dead players",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 339,
+	"alias": "",
+	"expanded": false,
+	"description": "Interface &#8250; Let alive players see chat from dead players",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 340,
+	"alias": "",
+	"expanded": false,
+	"description": "Interface &#8250; Disable leader board details (such as alive state, score, team)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 341,
+	"alias": "",
+	"expanded": false,
+	"description": "Interface &#8250; Enable leader board details (such as alive state, score, team)",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 500,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set Variable 'A' value to value of game version",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 501,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set Disabling of psi swords for Character 'A' to value of parameter 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "bool"
+},{
+	"opcode": 502,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Write text bubble 'B' above Character 'A'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 503,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change knockback factor of Character 'A' to value 'B' (0 to 1)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 504,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change stability of Character 'A' to value 'B' (0 to 1)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 505,
+	"alias": "",
+	"expanded": true,
+	"description": "Gameplay &#8250; Set Disabling of movement prediction to value of parameter 'A'",
+	"altDisplay": "",
+	"paramA": "bool",
+	"paramB": "nochange"
+},{
+	"opcode": 506,
+	"alias": "",
+	"expanded": true,
+	"description": "Gun &#8250; Rename Gun 'A' to 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 507,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set Disabling of nametag visibility for Character 'A' to value of parameter 'B'",
+	"altDisplay": "",
+	"paramA": "bool",
+	"paramB": "nochange"
+},{
+	"opcode": 508,
+	"alias": "",
+	"expanded": true,
+	"description": "Water &#8250; Rename water area 'A' to 'B'",
+	"altDisplay": "",
+	"paramA": "water",
+	"paramB": "string"
+},{
+	"opcode": 509,
+	"alias": "",
+	"expanded": true,
+	"description": "Water &#8250; Change color of water area 'A' to HEX color 'B'",
+	"altDisplay": "",
+	"paramA": "water",
+	"paramB": "string"
+},{
+	"opcode": 510,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Rotate decoration 'A' by value or variable 'B' (in degrees)",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "value"
+},{
+	"opcode": 511,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set Variable 'A' to value of degrees rotation in Decoration 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "value"
+},{
+	"opcode": 512,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change regeneration speed multiplier of Character 'A' to value 'B' (defaults to 1)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 513,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change regeneration delay multiplier of Character 'A' to value 'B' (defaults to 1)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "value"
+},{
+	"opcode": 514,
+	"alias": "",
+	"expanded": true,
+	"description": "Decoration &#8250; Change top-left position of decor 'A' to top-left position of region 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "region"
+},{
+	"opcode": 515,
+	"alias": "",
+	"expanded": true,
+	"description": "Background &#8250; Change top-left position of background 'A' to top-left position of region 'B'",
+	"altDisplay": "",
+	"paramA": "bg",
+	"paramB": "region"
+},{
+	"opcode": 516,
+	"alias": "",
+	"expanded": true,
+	"description": "Trigger execution &#8250; Continue execution of this trigger only if tracing from center of Region 'A' to center of Region 'B' intersects a character",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 517,
+	"alias": "",
+	"expanded": true,
+	"description": "Trigger execution &#8250; Continue execution of this trigger only if tracing from center of Region 'A' to center of Region 'B' doesn't intersect a character",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 518,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Scale healthbar of Character 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 520,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Toggle Character 'A' collision for other players using parameter 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "bool"
+},{
+	"opcode": 521,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Add Character 'A' collision for team 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "team"
+},{
+	"opcode": 522,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Remove Character 'A' collision for team 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "team"
+},{
+	"opcode": 523,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Add Character 'A' collision for Character 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "character"
+},{
+	"opcode": 524,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Remove Character 'A' collision for Character 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "character"
+},{
+	"opcode": 519,
+	"alias": "",
+	"expanded": true,
+	"description": "Water &#8250; Move water area 'A' to region 'B'",
+	"altDisplay": "",
+	"paramA": "water",
+	"paramB": "region"
+},{
+	"opcode": 526,
+	"alias": "",
+	"expanded": true,
+	"description": "Gravitator Area Field &#8250; Set Gravitator Area Field 'A' speed X to value 'B'",
+	"altDisplay": "",
+	"paramA": "pushf",
+	"paramB": "string"
+},{
+	"opcode": 527,
+	"alias": "",
+	"expanded": true,
+	"description": "Gravitator Area Field &#8250; Set Gravitator Area Field 'A' speed Y to value 'B'",
+	"altDisplay": "",
+	"paramA": "pushf",
+	"paramB": "string"
+},{
+	"opcode": 528,
+	"alias": "",
+	"expanded": true,
+	"description": "Gravitator Area Field &#8250; Add Gravitator Area Field 'A' speed X by value 'B'",
+	"altDisplay": "",
+	"paramA": "psuhf",
+	"paramB": "string"
+},{
+	"opcode": 529,
+	"alias": "",
+	"expanded": true,
+	"description": "Gravitator Area Field &#8250; Add Gravitator Area Field 'A' speed Y by value 'B'",
+	"altDisplay": "",
+	"paramA": "pushf",
+	"paramB": "string"
+},{
+	"opcode": 530,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set character 'A' speed X to value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 531,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set character 'A' speed Y to value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 532,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Add character 'A' speed X by value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 533,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Add character 'A' speed Y by value 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 534,
+	"alias": "",
+	"expanded": true,
+	"description": "Trigger &#8250; Call Trigger 'B' when variable 'A' gets assigned",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "trigger"
+},{
+	"opcode": 535,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change character 'A' hero status to 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "bool"
+},{
+	"opcode": 537,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Store time spent since start of game to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 538,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Store character 'B' speed X to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 539,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Store character 'B' speed Y to variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 540,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Split variable 'A' by string-value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 541,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Get index 'B' of variable 'A' and store into variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 542,
+	"alias": "GetGSPEED2",
+	"expanded": true,
+	"description": "Var &#8250; Set value of variable 'A' to current player's frame time",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 543,
+	"alias": "SetGSPEED",
+	"expanded": true,
+	"description": "Var &#8250; Set current frame time to string-value 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 544,
+	"alias": "SetGSPEED2",
+	"expanded": true,
+	"description": "Var &#8250; Set current player's frame time to string-value 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 545,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Call Trigger 'B' when Character 'A' takes damage",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "trigger"
+},{
+	"opcode": 546,
+	"alias": "",
+	"expanded": true,
+	"description": "Array &#8250; Create array at variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 547,
+	"alias": "",
+	"expanded": true,
+	"description": "Array &#8250; Add element 'B' to array 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 548,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Request server to generate value in range 'B' (A-B if integer, A.B if floating) for variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 549,
+	"alias": "",
+	"expanded": true,
+	"description": "Vehicle &#8250; Change Vehicle 'A' nickname to 'B' (Variable/String)",
+	"altDisplay": "",
+	"paramA": "vehicle",
+	"paramB": "string"
+},{
+	"opcode": 550,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set Character 'A' visibility multiplier to value 'B' (variable/string)",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 551,
+	"alias": "",
+	"expanded": true,
+	"description": "Gameplay &#8250; End round with reason 'A' for team 'B' (variable/string)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "team"
+},{
+	"opcode": 552,
+	"alias": "",
+	"expanded": true,
+	"description": "Gun &#8250; Set gun 'A' visibility multiplier to value 'B' (0 to 1)",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 553,
+	"alias": "",
+	"expanded": true,
+	"description": "Gun &#8250; Set gun 'A' scale to value 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "value"
+},{
+	"opcode": 554,
+	"alias": "",
+	"expanded": true,
+	"description": "Barrel &#8250; Destroy all barrels in region 'A'",
+	"altDisplay": "",
+	"paramA": "barrel",
+	"paramB": "region"
+},{
+	"opcode": 555,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Move Character of slot-value variable 'A' to region 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "region"
+},{
+	"opcode": 556,
+	"alias": "",
+	"expanded": true,
+	"description": "Barrel &#8250; Move, rotate and flip Decoration 'A' to position of Barrel 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "barrel"
+},{
+	"opcode": 557,
+	"alias": "",
+	"expanded": true,
+	"description": "Barrel &#8250; Set hitpoints of Barrel 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "barrel",
+	"paramB": "string"
+},{
+	"opcode": 558,
+	"alias": "",
+	"expanded": true,
+	"description": "Barrel &#8250; Clone Barrel 'A' spawn it in the center of region 'B'",
+	"altDisplay": "",
+	"paramA": "barrel",
+	"paramB": "region"
+},{
+	"opcode": 559,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Toggle Character 'A' dying intention using parameter 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "bool"
+},{
+	"opcode": 560,
+	"alias": "",
+	"expanded": true,
+	"description": "Barrel &#8250; Call Trigger 'B' on Barrel 'A' explosion",
+	"altDisplay": "",
+	"paramA": "barrel",
+	"paramB": "trigger"
+},{
+	"opcode": 561,
+	"alias": "",
+	"expanded": true,
+	"description": "Barrel &#8250; Call Trigger 'B' on Barrel 'A' crack",
+	"altDisplay": "",
+	"paramA": "barrel",
+	"paramB": "trigger"
+},{
+	"opcode": 562,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Skip next trigger action if value of variable 'A' is greater than value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 563,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Skip next trigger action if value of variable 'A' is less than value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 564,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Skip next trigger action if value of variable 'A' equals value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 565,
+	"alias": "",
+	"expanded": true,
+	"description": "Vehicle &#8250; Set vehicle 'A' visibility multiplier to value of 'B' (variable/string)",
+	"altDisplay": "",
+	"paramA": "vehicle",
+	"paramB": "string"
+},{
+	"opcode": 566,
+	"alias": "",
+	"expanded": true,
+	"description": "Gravity &#8250; Change gravity to the value of variable 'A'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 567,
+	"alias": "",
+	"expanded": true,
+	"description": "Vehicle &#8250; Move, rotate and flip Decoration 'A' to position of vehicle 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "vehicle"
+},{
+	"opcode": 568,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Move, rotate and flip Decoration 'A' to head position of Character 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "character"
+},{
+	"opcode": 569,
+	"alias": "",
+	"expanded": true,
+	"description": "Vehicle &#8250; Clone Vehicle 'A' spawn it in the center of region 'B'",
+	"altDisplay": "",
+	"paramA": "vehicle",
+	"paramB": "region"
+},{
+	"opcode": 570,
+	"alias": "",
+	"expanded": true,
+	"description": "Vehicle &#8250; Set locking of Vehicle 'A' to value of parameter 'B'",
+	"altDisplay": "",
+	"paramA": "vehicle",
+	"paramB": "bool"
+},{
+	"opcode": 571,
+	"alias": "",
+	"expanded": true,
+	"description": "Vehicle &#8250; generate A with B",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 572,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Skip next trigger action if value of variable 'A' is greater than value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 573,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Skip next trigger action if value of variable 'A' is less than value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 574,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Skip next trigger action if value of variable 'A' equals value 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 575,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Skip next trigger action if value of variable 'A' does not equals value of variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 576,
+	"alias": "",
+	"expanded": true,
+	"description": "Gun &#8250; Move and rotate decoration 'A' to position of Gun 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "gun"
+},{
+	"opcode": 577,
+	"alias": "",
+	"expanded": true,
+	"description": "Vehicle &#8250; Destroy Vehicle 'A'",
+	"altDisplay": "",
+	"paramA": "vehicle",
+	"paramB": "nochange"
+},{
+	"opcode": 578,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Move, rotate and flip decoration 'A' to character body 'B'",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "character"
+},{
+	"opcode": 579,
+	"alias": "",
+	"expanded": true,
+	"description": "Graphics &#8250; Draw circle graphic at center of region 'A' with radius 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "string"
+},{
+	"opcode": 580,
+	"alias": "",
+	"expanded": true,
+	"description": "Graphics &#8250; Clear draw graphic",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 581,
+	"alias": "",
+	"expanded": true,
+	"description": "Graphics &#8250; Set line style of draw graphic to thickness 'A' and hex-colour 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "textmsg"
+},{
+	"opcode": 582,
+	"alias": "",
+	"expanded": true,
+	"description": "Graphics &#8250; Set starting position of graphic to region 'A'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "nochange"
+},{
+	"opcode": 583,
+	"alias": "",
+	"expanded": true,
+	"description": "Graphics &#8250; Draw from current position of graphic to region 'A'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "nochange"
+},{
+	"opcode": 585,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set match password to value of string-variable 'A' (This works only if game master is present.)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 586,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set value of variable 'A' to match password",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 587,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set value of variable 'A' to logins of game masters. (Separated with /, this won't be set for bit of time)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 588,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change Character 'A' skin to variable value of 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 589,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change Character 'A' head to variable value of 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 590,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change Character 'A' body to variable value of 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 591,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change Character 'A' legs to variable value of 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 592,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change Character 'A' arms to variable value of 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 593,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set Character 'A' nickname color to hex color 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 594,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Do something to Character 'A' using Limb 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "bodylimb"
+},{
+	"opcode": 595,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Change Character skin of slot-value variable 'A' to 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "char"
+},{
+	"opcode": 596,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set Character of slot-value variable 'A' color pattern",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 597,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set variable 'A' to 1 if current difficulty is 'Very Easy', 0 in else case.",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 598,
+	"alias": "",
+	"expanded": true,
+	"description": "Trigger &#8250; Call trigger 'A' each time somebody leaves.",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "nochange"
+},{
+	"opcode": 599,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set variable 'A' to slot of player who left.",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 600,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set Character 'A' current hit point to variable 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 601,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set Character 'A' current max hit point to variable 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "string"
+},{
+	"opcode": 602,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set Character slot-value variable 'A' current hit point to variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 603,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Set Character slot-value variable 'A' current max hit point to variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 604,
+	"alias": "",
+	"expanded": true,
+	"description": "Background &#8250; Set Background 'A' visibility to 'B'",
+	"altDisplay": "",
+	"paramA": "bg",
+	"paramB": "bool"
+},{
+	"opcode": 605,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Silently clone Character 'A' and spawn it in the centre of Region 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "region"
+},{
+	"opcode": 606,
+	"alias": "",
+	"expanded": true,
+	"description": "Character &#8250; Silently clone Character 'A' and spawn it in random place of Region 'B'",
+	"altDisplay": "",
+	"paramA": "character",
+	"paramB": "region"
+},{
+	"opcode": 607,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set value of Variable 'A' to skin ID of Character 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "character"
+},{
+	"opcode": 608,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set value of Variable 'A' to skin ID of Character slot-value variable 'B'",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 610,
+	"alias": "",
+	"expanded": true,
+	"description": "Gun &#8250; Teleport/Move guns in Region 'A' to Region 'B'",
+	"altDisplay": "",
+	"paramA": "region",
+	"paramB": "region"
+},{
+	"opcode": 611,
+	"alias": "",
+	"expanded": true,
+	"description": "Gun &#8250; Change Gun 'A' projectile type to Defibrillator",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "nochange"
+},{
+	"opcode": 612,
+	"alias": "",
+	"expanded": true,
+	"description": "Gun &#8250; Change Gun 'A' crosshair to value 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 613,
+	"alias": "",
+	"expanded": true,
+	"description": "Vehicle &#8250; Scale entire Vehicle 'A' to value 'B'",
+	"altDisplay": "",
+	"paramA": "vehicle",
+	"paramB": "string"
+},{
+	"opcode": 614,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Call trigger 'A' when variable 'B' gets changed by Var Synchronize",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "string"
+},{
+	"opcode": 615,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set variable 'A' to slot of synchronizer",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 616,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Disapprove var sync",
+	"altDisplay": "",
+	"paramA": "nochange",
+	"paramB": "nochange"
+},{
+	"opcode": 617,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Call trigger 'A' BEFORE variable 'B' gets synchronized. (Useful if you wanna disapprove)",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "string"
+},{
+	"opcode": 619,
+	"alias": "",
+	"expanded": true,
+	"description": "Decoration &#8250; Attach decoration 'A' to current player's camera. Param 'B' will determine which part of the camera (left, center..) the decoration will be attached to.",
+	"altDisplay": "",
+	"paramA": "decor",
+	"paramB": "string"
+},{
+	"opcode": 620,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set variable A to value of variable in variable B",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 621,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set value of variable in variable A to value of variable B",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "string"
+},{
+	"opcode": 622,
+	"alias": "",
+	"expanded": true,
+	"description": "Gameplay &#8250; Enable kinetic module through walls using Parameter 'A'",
+	"altDisplay": "",
+	"paramA": "bool",
+	"paramB": "string"
+},{
+	"opcode": 623,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set variable 'A' to amount of times player has used timewarp.",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 624,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set max timewarp to variable 'A'. (Set to -1 to disable.)",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 625,
+	"alias": "",
+	"expanded": true,
+	"description": "Trigger &#8250; Call trigger 'A' when max timewarp is hit.",
+	"altDisplay": "",
+	"paramA": "trigger",
+	"paramB": "nochange"
+},{
+	"opcode": 626,
+	"alias": "",
+	"expanded": true,
+	"description": "Gun &#8250; Set gun 'A' upgrade level to string-value/variable 'B'",
+	"altDisplay": "",
+	"paramA": "gun",
+	"paramB": "string"
+},{
+	"opcode": 627,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set variable 'A' to slot of player who last joined.",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 6969,
+	"alias": "",
+	"expanded": true,
+	"description": "Other &#8250; Say rainbow text 'A' in chat",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange"
+},{
+	"opcode": 2500,
+	"alias": "",
+	"expanded": true,
+	"description": "Var &#8250; Set variable 'A' to 1 if recently sent message is team message, set to 0 in else case",
+	"altDisplay": "",
+	"paramA": "string",
+	"paramB": "nochange",
+	"side": "server"
+}]

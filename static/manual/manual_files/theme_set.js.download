@@ -1,0 +1,121 @@
+// JavaScript Document
+
+if(typeof document.createStyleSheet === 'undefined') {
+	document.createStyleSheet = (function() {
+		function createStyleSheet(href) {
+			if(typeof href !== 'undefined') {
+				var element = document.createElement('link');
+				element.type = 'text/css';
+				element.rel = 'stylesheet';
+				element.href = href;
+			}
+			else {
+				var element = document.createElement('style');
+				element.type = 'text/css';
+			}
+
+			document.getElementsByTagName('head')[0].appendChild(element);
+			var sheet = document.styleSheets[document.styleSheets.length - 1];
+
+			if(typeof sheet.addRule === 'undefined')
+				sheet.addRule = addRule;
+
+			if(typeof sheet.removeRule === 'undefined')
+				sheet.removeRule = sheet.deleteRule;
+
+			return sheet;
+		}
+
+		function addRule(selectorText, cssText, index) {
+			if(typeof index === 'undefined')
+				index = this.cssRules.length;
+
+			this.insertRule(selectorText + ' {' + cssText + '}', index);
+		}
+
+		return createStyleSheet;
+	})();
+}
+
+
+var THEME_BLUE = 0;
+var THEME_DARK = 1;
+
+
+var THEME = THEME_BLUE;
+
+try
+{
+	if ( localStorage.getItem( 'THEME' ) !== null )
+	THEME = parseFloat( localStorage.getItem( 'THEME' ) );
+}
+catch(e)
+{
+}
+
+if ( THEME === THEME_BLUE )
+{
+}
+else
+if ( THEME === THEME_DARK )
+{
+	var sheet_original = document.styleSheets[ 0 ];
+	var sheet2;
+	try
+	{
+		sheet2 = new CSSStyleSheet();
+	}
+	catch( e )
+	{
+		sheet2 = document.createStyleSheet();
+	}
+	//
+	
+		sheet2.insertRule( `
+			body,td,th {
+				font-family: Verdana, Arial, Helvetica, sans-serif;
+				font-size: 14px;
+				color: #FFFFFF;
+				background-color: #000000;
+			}
+		`);
+		sheet2.insertRule( `
+			a:link, a:visited
+			{
+				color:#FFCC00;
+				text-decoration: none;
+			}
+		`);
+		sheet2.insertRule( `
+			a:hover
+			{
+				color:#000000 !important;
+				background-color:#FFCC00;
+			}
+		`);
+		sheet2.insertRule( `
+			[src = "welcome.jpg"]
+			{
+				filter:invert(1);
+			}
+		` );
+		sheet2.insertRule( `
+			h3
+			{
+				color:#AACCFF;
+			}
+		` );
+		sheet2.insertRule( `
+			strong, b
+			{
+				color:#666666;
+			}
+		` );
+		
+	
+	//
+	for ( var i = 1; i < document.styleSheets.length - 1; i++ )
+	document.styleSheets[ i ].disabled = true;
+	
+	document.adoptedStyleSheets = [ sheet2 ];	
+}
